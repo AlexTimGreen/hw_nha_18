@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <title>Responsive Website</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+      }
+      header {
+        background-image: url("Heglandschap.jpg");
+        background-size: cover;
+        height: 75px;
+        width: 100%;
+        text-align: center;
+        color: white;
+      }
+      img {
+        width: auto;
+      }
+      footer {
+        text-align: center;
+        padding: 3px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      .main-content {
+        flex-grow: 1;
+        display: flex;
+      }
+      .left,
+      .right {
+        padding: 20px;
+      }
+      .left {
+        background: #dddddd;
+      }
+      .right {
+        background: #bbbbbb;
+      }
+      @media (min-width: 600px) {
+        body {
+          background-color: white;
+        }
+        .main-content {
+          flex-direction: row;
+        }
+        .left {
+          flex-basis: 20%;
+          flex-shrink: 0;
+        }
+        .right {
+          flex-grow: 1;
+        }
+        .container {
+          background-color: darkgoldenrod;
+          display: flex;
+  justify-content: space-between;
+        }
+        img {
+          width: 100px;
+          height: auto;
+        }
+      }
+      #feitjes1 {
+        background-color: hotpink;
+      }
+      #feitjes2 {
+        background-color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <header>SLENAKEN</header>
+
+    <div class="main-content">
+      <div class="left">
+        <div id="feitjes1">
+          3 leuke feitjes over Slenaken
+          <ol>
+            <li>
+              Het hoogste punt van Slenaken is + 245 meter N.A.P. nabij de grens
+              met De Plank (B)
+            </li>
+            <li>Slenaken telt circa 500 inwoners</li>
+            <li>Slenaken ligt aan het riviertje de Gulp</li>
+          </ol>
+        </div>
+        <div id="feitjes2">
+          Nog 2 feitjes over Slenaken
+          <ol>
+            <li>Slenaken telt vele hotels en is toeristisch druk bezocht</li>
+            <li>Het oudste gebouw is de St. Remigius kerk uit 1783</li>
+          </ol>
+        </div>
+      </div>
+      <div class="right">
+        <div class="container">
+          <h4><strong>Heglandschap</strong></h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur nisi labore impedit exercitationem </p>
+          <img src="Heglandschap.jpg" alt="heglandschap" width="50" height="50" />
+        </div>
+        <div class="container">
+          <h4><strong>Afsluiting</strong></h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur nisi labore impedit exercitationem </p>
+          <img src="640px-Teuven-wegafsluiting_Givelderweg-Gieveldstraat_(4).jpg" alt="afsluiting" width="50" height="50"/>
+        </div>
+        <div class="container">
+          <h4><strong>St. Remigiuskerk</strong></h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur nisi labore impedit exercitationem</p>
+          <img src="St._Remigiuskerk,_Slenaken.jpg" alt="remiguskerk slenaken" width="50" height="50" />
+        </div>
+        <div class="container">
+          <h4><strong>Slijpsteen</strong></h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur nisi labore impedit exercitationem</p>
+          <img src="Slenaken_Slijpsteen.JPG" alt="slijpsteen" width="50" height="50" />
+        </div>
+        <div class="container">
+          <h4><strong>Grenssteen 22</strong></h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur nisi labore impedit exercitationem</p>
+          <img src="Sint-Martens-Voeren-Grenspaal_22.jpg" alt="grenspaal22" width="50" />
+        </div>
+        <div class="container">
+          <h4><strong>Viaduct Remersdaal</strong></h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur nisi labore impedit exercitationem</p>
+          <img src="Voeren_Viaduct_van_Remersdaal.jpg" alt="Image description" width="50" />
+        </div>
+        <div class="container">
+          <h4><strong>Grenspaal 18</strong></h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur nisi labore impedit exercitationem</p>
+          <img src="Slenaken-Teuven-Grenspaal_18.jpg" alt="Image description" width="50" />
+        </div>
+        <div class="container">
+          <h4><strong>Annakapel</strong></h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur nisi labore impedit exercitationem</p>
+          <img src="Slenaken_Sint_Annakapel.JPG" alt="Image description" width="50" />
+        </div>
+        <div class="container">
+          <h4><strong>Martensvoeren</strong></h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur nisi labore impedit exercitationem</p>
+          <img src="Sint-Martens-Voeren-Grenspaal_22.jpg" alt="Image description" width="50" />
+        </div>
+    </div>
+    <footer>Copyright 2023 huiswerkopdracht Jimmy</footer>
+  </body>
+</html>
